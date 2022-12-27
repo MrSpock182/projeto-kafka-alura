@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: alura-bank
+  main:
+    allow-bean-definition-overriding: true
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/alura?serverSelectionTimeoutMS=15000&connectTimeoutMS=15000
