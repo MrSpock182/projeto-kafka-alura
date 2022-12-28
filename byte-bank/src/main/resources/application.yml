@@ -5,7 +5,12 @@ spring:
     allow-bean-definition-overriding: true
   data:
     mongodb:
-      uri: mongodb://localhost:27017/alura?serverSelectionTimeoutMS=15000&connectTimeoutMS=15000\
+      uri: mongodb://localhost:27017/alura?serverSelectionTimeoutMS=15000&connectTimeoutMS=15000
   kafka:
+    bootstrap-servers: localhost:9092
     topics:
       enviar-pagamento-banco-central: "enviar-pagamento-banco-central"
+    producer:
+      bootstrap-servers: ${spring.kafka.bootstrap-servers}
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
