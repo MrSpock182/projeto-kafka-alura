@@ -5,6 +5,7 @@ import br.com.alura.bytebank.repository.ContaRepository;
 import br.com.alura.bytebank.repository.orm.Conta;
 import org.springframework.stereotype.Service;
 
+@Service
 public class ConsultarSaldoService {
 
     private final ContaRepository repository;
