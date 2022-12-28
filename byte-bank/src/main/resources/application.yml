@@ -5,4 +5,7 @@ spring:
     allow-bean-definition-overriding: true
   data:
     mongodb:
-      uri: mongodb://localhost:27017/alura?serverSelectionTimeoutMS=15000&connectTimeoutMS=15000
+      uri: mongodb://localhost:27017/alura?serverSelectionTimeoutMS=15000&connectTimeoutMS=15000\
+  kafka:
+    topics:
+      enviar-pagamento-banco-central: "enviar-pagamento-banco-central"
