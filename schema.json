@@ -1,224 +1,225 @@
 {
-  "info": {
-    "_postman_id": "604b0a91-fbd3-4b8c-9887-7ee80e0bfe5e",
-    "name": "kafka-schema",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-  },
-  "item": [
-    {
-      "name": "http://localhost:8081/subjects",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "http://localhost:8081/subjects",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "8081",
-          "path": [
-            "subjects"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "http://localhost:8081/subjects/sell-details-value/versions",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/vnd.schemaregistry.v1+json",
-            "type": "default"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\"schema\": \"{\\\"type\\\":\\\"record\\\",\\\"name\\\":\\\"PixAvro\\\",\\\"version\\\":1,\\\"fields\\\":[{\\\"name\\\":\\\"chavePixProdutor\\\",\\\"type\\\":\\\"string\\\",\\\"default\\\":\\\"\\\",\\\"doc\\\":\\\"Chavepixdousuarioquedesejaenviarovalor\\\"},{\\\"name\\\":\\\"chavePixEnvio\\\",\\\"type\\\":\\\"string\\\",\\\"default\\\":\\\"\\\",\\\"doc\\\":\\\"Chavepixdousuaruiquedesejareceberovalor\\\"},{\\\"name\\\":\\\"valor\\\",\\\"type\\\":\\\"double\\\",\\\"default\\\":0.0,\\\"doc\\\":\\\"Valoraserenviadonatransferencia\\\"}]}\"}"
-        },
-        "url": {
-          "raw": "http://localhost:8081/subjects/pix-subject/versions",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "8081",
-          "path": [
-            "subjects",
-            "pix-subject",
-            "versions"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "http://localhost:8081/config/sell-details-value",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "http://localhost:8081/config/pix-subject",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "8081",
-          "path": [
-            "config",
-            "pix-subject"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "http://localhost:8081/config/sell-details-value",
-      "request": {
-        "method": "PUT",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json",
-            "type": "default"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\"compatibility\": \"FORWARD\"}"
-        },
-        "url": {
-          "raw": "http://localhost:8081/config/pix-subject",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "8081",
-          "path": [
-            "config",
-            "pix-subject"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "http://localhost:8081/subjects/sell-details-value/versions",
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/vnd.schemaregistry.v1+json",
-            "type": "default"
-          }
-        ],
-        "url": {
-          "raw": "http://localhost:8081/subjects/pix-subject/versions",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "8081",
-          "path": [
-            "subjects",
-            "pix-subject",
-            "versions"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "http://localhost:8081/compatibility/subjects/sell-details-value",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/vnd.schemaregistry.v1+json",
-            "type": "default"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\"schema\": \"{\\\"type\\\":\\\"record\\\",\\\"name\\\":\\\"PixAvro\\\",\\\"version\\\":1,\\\"fields\\\":[{\\\"name\\\":\\\"chavePixProdutor\\\",\\\"type\\\":\\\"string\\\",\\\"default\\\":\\\"\\\",\\\"doc\\\":\\\"Chavepixdousuarioquedesejaenviarovalor\\\"},{\\\"name\\\":\\\"chavePixEnvio\\\",\\\"type\\\":\\\"string\\\",\\\"default\\\":\\\"\\\",\\\"doc\\\":\\\"Chavepixdousuaruiquedesejareceberovalor\\\"},{\\\"name\\\":\\\"valor\\\",\\\"type\\\":\\\"double\\\",\\\"default\\\":0.0,\\\"doc\\\":\\\"Valoraserenviadonatransferencia\\\"}]}\"}"
-        },
-        "url": {
-          "raw": "http://localhost:8081/compatibility/subjects/sell-details-value",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "8081",
-          "path": [
-            "compatibility",
-            "subjects",
-            "sell-details-value"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "http://localhost:8081/subjects/sell-details-value/versions/2",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/vnd.schemaregistry.v1+json",
-            "type": "default"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": ""
-        },
-        "url": {
-          "raw": "http://localhost:8081/subjects/pix-subject/versions/1",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "8081",
-          "path": [
-            "subjects",
-            "pix-subject",
-            "versions",
-            "1"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "http://localhost:8081/subjects/foo-summary-value",
-      "request": {
-        "method": "DELETE",
-        "header": [],
-        "url": {
-          "raw": "http://localhost:8081/subjects/pix-subject/versions/1",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "8081",
-          "path": [
-            "subjects",
-            "pix-subject",
-            "versions",
-            "1"
-          ]
-        }
-      },
-      "response": []
-    }
-  ]
+	"info": {
+		"_postman_id": "b02c0b46-3173-45f2-bf24-66998b1c138d",
+		"name": "kafka-schema",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "349581"
+	},
+	"item": [
+		{
+			"name": "retorna-topicos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/subjects",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"subjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cadastra-topicos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.schemaregistry.v1+json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"schema\": \"{\\\"type\\\":\\\"record\\\",\\\"name\\\":\\\"PixAvro\\\",\\\"version\\\":1,\\\"fields\\\":[{\\\"name\\\":\\\"chaveProdutor\\\",\\\"type\\\":\\\"string\\\",\\\"default\\\":\\\"\\\",\\\"doc\\\":\\\"Chavepixdousuarioquedesejaenviarovalor\\\"},{\\\"name\\\":\\\"chaveQuemRecebe\\\",\\\"type\\\":\\\"string\\\",\\\"default\\\":\\\"\\\",\\\"doc\\\":\\\"Chavepixdousuarioquedesejareceberovalor\\\"},{\\\"name\\\":\\\"valor\\\",\\\"type\\\":\\\"bytes\\\",\\\"logicalType\\\":\\\"decimal\\\",\\\"precision\\\":7,\\\"scale\\\":2,\\\"default\\\":0.0,\\\"doc\\\":\\\"Valoraserrnviadonatransferenvia\\\"}]}\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/subjects/pix-subject/versions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"subjects",
+						"pix-subject",
+						"versions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retorna-compatibilidade",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/config/pix-subject",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"config",
+						"pix-subject"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "altera-compatiblidade",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"compatibility\": \"FORWARD\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/config/pix-subject",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"config",
+						"pix-subject"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retorna-versoes-do-topico",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.schemaregistry.v1+json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/subjects/pix-subject/versions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"subjects",
+						"pix-subject",
+						"versions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verifica-se-alteracao-esta-okay",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.schemaregistry.v1+json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"schema\": \"{\\\"type\\\":\\\"record\\\",\\\"name\\\":\\\"PixAvro\\\",\\\"version\\\":1,\\\"fields\\\":[{\\\"name\\\":\\\"chaveProdutor\\\",\\\"type\\\":\\\"string\\\",\\\"default\\\":\\\"\\\",\\\"doc\\\":\\\"Chavepixdousuarioquedesejaenviarovalor\\\"},{\\\"name\\\":\\\"chaveQuemRecebe\\\",\\\"type\\\":\\\"string\\\",\\\"default\\\":\\\"\\\",\\\"doc\\\":\\\"Chavepixdousuarioquedesejareceberovalor\\\"},{\\\"name\\\":\\\"valor\\\",\\\"type\\\":\\\"bytes\\\",\\\"logicalType\\\":\\\"decimal\\\",\\\"precision\\\":7,\\\"scale\\\":2,\\\"default\\\":0.0,\\\"doc\\\":\\\"Valoraserrnviadonatransferenvia\\\"}]}\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/compatibility/subjects/pix-subject",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"compatibility",
+						"subjects",
+						"pix-subject"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retorna-avro-cadatrado-para-um-topico",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.schemaregistry.v1+json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8081/subjects/pix-subject/versions/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"subjects",
+						"pix-subject",
+						"versions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleta-um-avro",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/subjects/pix-subject/versions/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"subjects",
+						"pix-subject",
+						"versions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
 }
