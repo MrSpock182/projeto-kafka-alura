@@ -38,7 +38,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"schema\": \"{\\\"type\\\":\\\"record\\\",\\\"name\\\":\\\"PixAvro\\\",\\\"version\\\":1,\\\"fields\\\":[{\\\"name\\\":\\\"chaveProdutor\\\",\\\"type\\\":\\\"string\\\",\\\"default\\\":\\\"\\\",\\\"doc\\\":\\\"Chavepixdousuarioquedesejaenviarovalor\\\"},{\\\"name\\\":\\\"chaveQuemRecebe\\\",\\\"type\\\":\\\"string\\\",\\\"default\\\":\\\"\\\",\\\"doc\\\":\\\"Chavepixdousuarioquedesejareceberovalor\\\"},{\\\"name\\\":\\\"valor\\\",\\\"type\\\":\\\"bytes\\\",\\\"logicalType\\\":\\\"decimal\\\",\\\"precision\\\":7,\\\"scale\\\":2,\\\"default\\\":0.0,\\\"doc\\\":\\\"Valoraserrnviadonatransferenvia\\\"}]}\"}"
+					"raw": "{\"schema\": \"{\\\"type\\\":\\\"record\\\",\\\"name\\\":\\\"PixAvro\\\",\\\"version\\\":1,\\\"fields\\\":[{\\\"name\\\":\\\"chaveProdutor\\\",\\\"type\\\":\\\"string\\\",\\\"default\\\":\\\"\\\",\\\"doc\\\":\\\"Chavepixdousuarioquedesejaenviarovalor\\\"},{\\\"name\\\":\\\"chaveQuemRecebe\\\",\\\"type\\\":\\\"string\\\",\\\"default\\\":\\\"\\\",\\\"doc\\\":\\\"Chavepixdousuarioquedesejareceberovalor\\\"},{\\\"name\\\":\\\"valor\\\",\\\"type\\\":\\\"bytes\\\",\\\"logicalType\\\":\\\"decimal\\\",\\\"precision\\\":7,\\\"scale\\\":2,\\\"default\\\":0.0,\\\"doc\\\":\\\"Valoraserrnviadonatransferenvia\\\"},{\\\"name\\\":\\\"contato\\\",\\\"type\\\":\\\"string\\\",\\\"default\\\":\\\"\\\",\\\"doc\\\":\\\"Contato do cliente pix\\\"}]}\"}"
 				},
 				"url": {
 					"raw": "http://localhost:8081/subjects/pix-subject/versions",
