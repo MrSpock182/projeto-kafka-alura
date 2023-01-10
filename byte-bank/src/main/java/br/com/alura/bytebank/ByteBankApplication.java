@@ -7,10 +7,10 @@ import org.springframework.kafka.annotation.EnableKafka;
 
 @EnableKafka
 @SpringBootApplication
-public class AluraBankApplication implements CommandLineRunner {
+public class ByteBankApplication implements CommandLineRunner {
 
     public static void main(String[] args) {
-        SpringApplication.run(AluraBankApplication.class, args);
+        SpringApplication.run(ByteBankApplication.class, args);
     }
 
     @Override
