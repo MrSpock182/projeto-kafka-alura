@@ -24,4 +24,10 @@ public class ConsultarSaldo {
         return consultarSaldoService.realizarConsulta(chavePix);
     }
 
+    @ResponseStatus(OK)
+    @GetMapping("/add-valor")
+    public void meuSaldo() {
+        consultarSaldoService.addCemReais();
+    }
+
 }
