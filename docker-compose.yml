@@ -50,11 +50,6 @@ services:
 
   mongodb:
     image: mongo
-    hostname: mongodb
     container_name: mongodb
     ports:
       - "27017:27017"
-
-networks:
-  alura-network:
-    external: true
