@@ -49,6 +49,13 @@ services:
       SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: "kafka:9092"
       SCHEMA_REGISTRY_LISTENERS: http://0.0.0.0:8081
 
+  mongodb:
+    image: mongo
+    hostname: mongodb
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+
 networks:
   alura-network:
     external: true
