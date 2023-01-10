@@ -11,16 +11,16 @@ import java.math.BigDecimal;
 
 @EnableKafka
 @SpringBootApplication
-public class AluraBankApplication implements CommandLineRunner {
+public class ByteBankApplication implements CommandLineRunner {
 
     private final ProdutorPixBancoCentral produtor;
 
-    public AluraBankApplication(ProdutorPixBancoCentral produtor) {
+    public ByteBankApplication(ProdutorPixBancoCentral produtor) {
         this.produtor = produtor;
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(AluraBankApplication.class, args);
+        SpringApplication.run(ByteBankApplication.class, args);
     }
 
     @Override
