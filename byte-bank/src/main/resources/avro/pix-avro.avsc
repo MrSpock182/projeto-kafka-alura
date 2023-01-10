@@ -1,0 +1,29 @@
+{
+  "type": "record",
+  "name": "PixAvro",
+  "version": 1,
+  "namespace": "br.com.avro",
+  "fields": [
+    {
+      "name": "chaveProdutor",
+      "type": "string",
+      "default": "",
+      "doc": "Chavepixdousuarioquedesejaenviarovalor"
+    },
+    {
+      "name": "chaveQuemRecebe",
+      "type": "string",
+      "default": "",
+      "doc": "Chavepixdousuarioquedesejareceberovalor"
+    },
+    {
+      "name": "valor",
+      "type": "bytes",
+      "logicalType": "decimal",
+      "precision": "7",
+      "scale": "2",
+      "default": "0.00",
+      "doc": "Valor total via pix"
+    }
+  ]
+}

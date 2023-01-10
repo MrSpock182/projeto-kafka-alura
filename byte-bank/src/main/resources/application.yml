@@ -10,6 +10,13 @@ spring:
     bootstrap-servers: localhost:9092
     topics:
       enviar-pagamento-banco-central: "enviar-pagamento-banco-central"
+    properties:
+      schema:
+        registry:
+          url: http://0.0.0.0:8081
+      specific:
+        avro:
+          reader: true
     producer:
       bootstrap-servers: ${spring.kafka.bootstrap-servers}
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
